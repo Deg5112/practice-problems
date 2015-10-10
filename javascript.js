@@ -24,3 +24,5 @@ function reverse (array) {
     }
     return newArr;
 }
+
+//One to Multi
