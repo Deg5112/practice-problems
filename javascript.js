@@ -1,3 +1,4 @@
+//bigger words
 var array = ['Steve', 'Joshua', 'Andrew', 'Daniel'];
 
 function returnArray(string, arrayOfStrings){
@@ -11,3 +12,15 @@ function returnArray(string, arrayOfStrings){
     return arr;
 }
 
+
+//total reverse
+var arr = [1, 2, 3, 4, 5];
+
+function reverse (array) {
+    var newArr =[];
+    var x = arr.length-1;
+    for(x; x>=0; x--){
+        newArr.push(arr[x]);
+    }
+    return newArr;
+}
