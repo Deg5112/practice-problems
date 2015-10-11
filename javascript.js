@@ -73,6 +73,48 @@ function fizzBuzz(){
 fizzBuzz();
 
 
+//sprials
+function outputFib(num){
+    var seq =[0, 1];
+    var x = 0;
+    var y = 1;
+    var fib;
+    while(seq.length<num){
+        fib = x + y;
+        seq.push(fib);
+        x = y;
+        y = fib;
+    }
+    return seq;
+}
 
+outputFib(12);
+
+//igpay
+
+function pigLatin(string){
+    var newArray = [];
+    var arr = string.split(' ');//split string
+    for(var i in arr){
+        newArray.push(arr[i].split(''));//push the split index into new array
+    }
+    for(x in newArray){
+        var final = ''
+        if( newArray[x][x] !=='a' || newArray[x][x] !=='e' || newArray[x][x] !=='i'
+            || newArray[x][x] !=='o' || newArray[x][x] !=='u' ){
+            newArray[x].push(newArray[x][x]);
+            newArray[x].splice(x, 1);
+            newArray[x].push('ay');
+        }
+    }
+    for(i in newArray){
+        final += newArray[i].join('') + ' ';
+    }
+    return final;
+
+}
+pigLatin('hello governor');
+
+result: 'ellohay gvernoroay '
 
 
